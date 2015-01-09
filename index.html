@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tip Caluculator</title>
+		<script src="script.js"></script>
+		<style>				
+			div{
+				font-size:21px;
+			}
+			input{
+				font-size:20px;
+				width:100px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Tip Calculator</h2>
+		<div>
+			Enter the cost of the meal :$&nbsp;<input type="text" id="baseTxt" ><br><br>
+			Enter the percentage of sales tax: <input type="text" id="salesTaxTxt" ><br><br>
+			Enter the percentage of tip you would like leave: <input type="text" id="tipTxt"><br><br>
+			<input type="button" id="calcBtn" value="Calculate" onclick="calculateBill()">
+		</div>					
+	</body>
+</html>
