@@ -11,7 +11,7 @@
 				font-size:20px;
 				width:100px;
 			}
-		</style>
+		</style>		
 	</head>
 	<body>
 		<h2>Tip Calculator</h2>
@@ -19,7 +19,14 @@
 			Enter the cost of the meal :$&nbsp;<input type="text" id="baseTxt" ><br><br>
 			Enter the percentage of sales tax: <input type="text" id="salesTaxTxt" ><br><br>
 			Enter the percentage of tip you would like leave: <input type="text" id="tipTxt"><br><br>
-			<input type="button" id="calcBtn" value="Calculate" onclick="calculateBill()">
-		</div>					
+			<input type="button" id="calcBtn" value="Calculate" >
+		</div>
+		<script>
+			(function init(){
+				var button = document.getElementById('calcBtn');
+				//alert(button.value);
+				button.addEventListener('click', calculateBill);
+			})();
+		</script>					
 	</body>
 </html>
